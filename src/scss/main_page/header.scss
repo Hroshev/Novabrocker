@@ -1,0 +1,63 @@
+header{
+    min-height: 100vh;
+    background: url("@img/header__background.jpg") 0 0/cover no-repeat;
+	background-position: right;
+    @include phone{
+        background-position: 70% 90%;
+        background-size: auto 60%;
+      }
+    .header__top{
+        padding-top: 30px;
+        img{
+            @include phone{
+                width: 150px;
+              }
+        }
+    }
+    .header__bottom{
+        margin-top: 100px;
+        max-width: 550px;
+        @include phone{
+            margin-top: 25px;
+          }
+        h1{
+            font-size: 90px;
+            font-weight: 700;
+            color: #272D4E;
+            @include phone{
+                margin: 20px 0;
+                font-size: 39px;
+                max-width: 249px;
+              }
+        }
+        p{
+            font-size: 18px;
+            font-weight: 500;
+            color: $second-color;
+            @include phone{
+                font-size: 12px;
+              }
+        }
+        &__button{
+            margin-top: 118px;
+            @include phone{
+                margin-top: 21px;
+              }
+            span{
+                font-size: 30px;
+                color: #94A2B3;
+                @include phone{
+                    font-size: 15px;
+                  }
+            }
+            a{
+                font-size: 30px;
+                color: #2B9FF3;
+                border-bottom: 2px solid #2B9FF3;
+                @include phone{
+                    font-size: 15px;
+                  }
+            }
+        }
+    }
+}

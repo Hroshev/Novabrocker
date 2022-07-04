@@ -1,0 +1,91 @@
+.modal {
+    padding-bottom: 204px;
+    h3 {
+        font-size: 50px;
+        font-weight: 700;
+        color: $first-color;
+        text-align: center;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 300;
+        color: $second-color;
+        text-align: center;
+    }
+    .modal__wrap {
+        margin-top: 90px;
+        .modal__wrap__box__one {
+            padding: 40px 48px 24px 57px;
+            max-width: 720px;
+            width: 100%;
+            align-items: flex-start;
+            background: #eb242a;
+            border-radius: 21px;
+            .modal__wrap__box__content {
+                max-width: 370px;
+                width: 100%;
+                h4 {
+                    font-size: 24px;
+                    margin-bottom: 11px;
+                    font-weight: 700;
+                    max-width: 306px;
+                    width: 100%;
+                    color: #fff;
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-family: "Mulish", sans-serif;
+                    color: #fff;
+                }
+            }
+            button {
+                margin-top: 37px;
+                background-color: transparent;
+                img {
+                    transition: transform 0.2s linear;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+        .modal__wrap__box__two {
+            padding: 40px 48px 24px 57px;
+            max-width: 720px;
+            width: 100%;
+            align-items: flex-start;
+            border: 2px solid #eb242a;
+            border-radius: 21px;
+            .modal__wrap__box__content {
+                max-width: 357px;
+                width: 100%;
+                align-items: left;
+                h4 {
+                    font-size: 24px;
+                    margin-bottom: 11px;
+                    font-weight: 700;
+                    max-width: 195px;
+                    width: 100%;
+                    color: $first-color;
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-family: "Mulish", sans-serif;
+                    color: $first-color;
+                }
+            }
+            button {
+                margin-top: 37px;
+                background-color: transparent;
+                img {
+                    transition: transform 0.2s linear;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}

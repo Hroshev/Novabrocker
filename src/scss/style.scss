@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import "../scss/reset.scss";
+@import "../scss/media-requests.scss";
+@import "../scss/adaptive-property.scss";
+
+// @import "swiper";
+// @import "../../node_modules/swiper/swiper.scss";
+// @import "../../node_modules/swiper/modules/navigation/navigation.scss";
+
+/* text color */
+$first-color: #001A49;
+$second-color: #4F596A;
+$third-color: #272D4E;
+
+/* button */
+$btn-color: #EB242A;
+$darker-color: darken($btn-color, 25%);
+$lighter-color: lighten($btn-color, 25%);
+
+/* hover */
+/* 
+transition: background-color .2s linear;
+&:hover {
+   color: darken(#fff, 25%);
+}         
+&:focus{
+   color: #fff;
+}
+background-color: darken(color, 25%);
+background-color: lighten(color, 25%); 
+*/
+
+/* font-family: 'Mulish', sans-serif; */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $first-color;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1490px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* Basic Styles */
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn{
+  max-width: 244px;
+  width: 100%;
+  padding: 18px 60px;
+  border-radius: 60px;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  font-size: 26px;
+  color: #fff;
+  background-color: $btn-color;
+  transition: background-color .2s linear;
+  @include phone{
+    font-size: 19px;
+    max-width: 146px;
+    padding: 15px 25px;
+  }
+  
+  &:hover {
+    background-color: $darker-color;
+  }
+
+  &:focus{
+    background-color: $btn-color;
+  }
+}
+
+@import "../scss/main_page/header.scss";
+@import "../scss/main_page/cashback.scss";
+@import "../scss/main_page/modal.scss";
+@import "../scss/main_page/features.scss";
+@import "../scss/main_page/callBack.scss";
+@import "../scss/main_page/benefits.scss";
+@import "../scss/main_page/promo.scss";
+@import "../scss/main_page/footer.scss";

@@ -1,0 +1,109 @@
+.features{
+    margin-bottom: 120px;
+    @include tablet-min{
+        margin-bottom: 60px;
+      }
+    .features__title{
+        max-width: 978px;
+        text-align: center;
+        margin: 0 auto 72px auto;
+        @include tablet-min{
+            margin-bottom: 25px;
+          }
+        h2{
+            font-size: 50px;
+            font-weight: 700;
+            color: $third-color;
+            @include tablet-min{
+                font-size: 26px;
+              }
+        }
+    }
+    .features__box{
+        @include tablet-min{
+            padding: 27px;
+            border: 2px solid $second-color;
+            border-radius: 24px;
+            flex-direction: column;
+          }
+        .features__box__wrap{
+            position: relative;
+            text-align: center;
+            @include tablet-min{
+                margin-bottom: 45px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+              }
+            &::after{
+                position: absolute;
+                content: "";
+                top: 20%;
+                left: 75%;
+                @include adaptiv-value("width", 266, 10, 0);
+                height: 2px;
+                background-color: #C8C8C8;
+                @include tablet-min{
+                    display: none;
+                  }
+            }
+            &:last-child::after{
+                display: none;
+            }
+            .features__box__number{
+                position: relative;
+                width: 99px;
+                height: 99px;
+                margin: 0 auto 40px auto;
+                background: #fff;
+                border-radius: 50%;
+                box-shadow: 0px 12.375px 24.75px rgba(0, 0, 0, 0.11);
+                @include desktop-min{
+                    width: 66px;
+                    height: 66px;
+                  }
+                @include tablet-min{
+                    margin-bottom: 25px;
+                  }
+                h4{
+                    position: absolute;
+                    font-size: 60px;
+                    font-weight: 500;
+                    color: #EB242A;
+                    top: 50%;
+                    left: 50%;
+                    margin-right: -50%;
+                    transform: translate(-50%, -50%);
+                    @include desktop-min{
+                        font-size: 50px;
+                      }
+                    @include tablet{
+                        font-size: 39px;
+                      }
+                }
+            }
+            h3{
+                font-size: 36px;
+                font-weight: 700;
+                color: $third-color;
+                @include desktop-min{
+                    font-size: 28px;
+                  }
+                @include tablet{
+                    font-size: 23px;
+                  }
+            }
+            p{
+                font-size: 20px;
+                font-weight: 500;
+                color: $second-color;
+                @include desktop-min{
+                    font-size: 16px;
+                  }
+                @include tablet{
+                    font-size: 13px;
+                  }
+            }
+        }
+    }
+}

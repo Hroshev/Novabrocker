@@ -1,0 +1,60 @@
+.callBack{
+    padding: 54px 42px;
+    background-color: #EB242A;
+    @include tablet{
+        padding: 36px 0 45px 0;
+      }
+    
+    .container{
+        @include tablet{
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        h3{
+            font-size: 40px;
+            width: 100%;
+            max-width: 709px;
+            color: #fff;
+            @include phone{
+                font-size: 18px;
+              }
+            span{
+                font-weight: 600;
+            }
+        }
+        .callBack__input{
+            position: relative;
+            @include tablet{
+                margin-top: 26px;
+              }
+            &::after{
+                position: absolute;
+                content: "";
+                top: 50%;
+                transform: translate(0, -50%);
+                right: 0;
+                background: url("@img/callBack__phone.png") 0 0/cover no-repeat;
+                width: 70px;
+                height: 70px;
+            }
+            input{
+                padding: 20px 100px 20px 30px;
+                box-shadow: inset -2.40556px -2.40556px 4.81111px rgba(255, 255, 255, 0.5), inset 2.40556px 2.40556px 4.81111px rgba(170, 170, 204, 0.25), inset 6.01389px 6.01389px 12.0278px rgba(170, 170, 204, 0.5), inset -6.01389px -6.01389px 12.0278px #FFFFFF;
+                border-radius: 48px;
+                background: #FFFFFF;
+                @include phone{
+                  padding: 15px 50px 15px 25px;
+                }
+    
+                &::placeholder {
+                    font-size: 28px;
+                    font-weight: 500;
+                    color: #C3C6CB;
+                    @include phone{
+                      font-size: 19px;
+                    }
+                  }
+            }
+        }
+    }
+}
