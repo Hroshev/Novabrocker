@@ -38,9 +38,9 @@
             &::after{
                 position: absolute;
                 content: "";
-                top: 20%;
-                left: 75%;
-                @include adaptiv-value("width", 266, 10, 0);
+                top: 15%;
+                left: 84%;
+                @include adaptiv-value("width", 230, 40, 0);
                 height: 2px;
                 background-color: #C8C8C8;
                 @include tablet-min{

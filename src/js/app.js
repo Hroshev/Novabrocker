@@ -1,5 +1,6 @@
-import "./modules/onlyNumber.js";
-import "./modules/promoVideo.js";
+/* import "./modules/onlyNumber.js";
+import "./modules/promoVideo.js"; */
+import "./modules/popup.js"; 
 import "./modules/date.js";
 /* 
 import "./modules/burger.js";
@@ -9,7 +10,6 @@ import "./modules/productSell.js";
 import "./modules/circleProgressBar.js";
 import "./modules/featureProducts.js";
 import "./modules/date.js";
-import "./modules/modalWindow.js"; 
 */
 
 //Swiper

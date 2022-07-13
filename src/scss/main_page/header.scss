@@ -1,6 +1,7 @@
 header{
     min-height: 100vh;
-    background: url("@img/header__background.jpg") 0 0/cover no-repeat;
+    background-color: #D1D1D1;
+    background: url("@img/header__background.png") 0 0/cover no-repeat;
 	background-position: right;
     @include phone{
         background-position: 70% 90%;

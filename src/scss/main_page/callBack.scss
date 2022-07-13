@@ -15,8 +15,9 @@
             width: 100%;
             max-width: 709px;
             color: #fff;
-            @include phone{
+            @include tablet-min{
                 font-size: 18px;
+                margin-left: 25px;
               }
             span{
                 font-weight: 600;
@@ -42,7 +43,7 @@
                 box-shadow: inset -2.40556px -2.40556px 4.81111px rgba(255, 255, 255, 0.5), inset 2.40556px 2.40556px 4.81111px rgba(170, 170, 204, 0.25), inset 6.01389px 6.01389px 12.0278px rgba(170, 170, 204, 0.5), inset -6.01389px -6.01389px 12.0278px #FFFFFF;
                 border-radius: 48px;
                 background: #FFFFFF;
-                @include phone{
+                @include tablet-min{
                   padding: 15px 50px 15px 25px;
                 }
     
@@ -50,7 +51,7 @@
                     font-size: 28px;
                     font-weight: 500;
                     color: #C3C6CB;
-                    @include phone{
+                    @include tablet-min{
                       font-size: 19px;
                     }
                   }
