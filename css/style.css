@@ -379,6 +379,7 @@ aside .aside__background {
 
 aside .aside__background .aside__background__content {
   margin-right: 77px;
+  max-width: 670px;
 }
 
 aside .aside__background .aside__background__content h3 {
@@ -392,6 +393,11 @@ aside .aside__background .aside__background__content p {
   font-size: 24px;
   font-weight: 500;
   color: #4F596A;
+}
+
+aside .aside__background .cashback {
+  width: 100%;
+  max-width: 500px;
 }
 
 .modal {
@@ -714,6 +720,11 @@ aside .aside__background .aside__background__content p {
   border-radius: 21px;
 }
 
+.benefits .benefits__wrap .benefits__wrap__box .benefits__img {
+  width: 68px;
+  height: 68px;
+}
+
 .benefits .benefits__wrap .benefits__wrap__box .benefits__wrap__box__content {
   margin-left: 30px;
 }
@@ -761,6 +772,8 @@ aside .aside__background .aside__background__content p {
   font-size: 65px;
   margin-bottom: 12px;
   font-weight: 700;
+  width: 100%;
+  max-width: 750px;
   color: #001A49;
 }
 
@@ -894,8 +907,35 @@ footer .copyright {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 30px;
-  color: #000;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.popup .popup__body .popup__content .popup__close:hover {
+  opacity: 1;
+}
+
+.popup .popup__body .popup__content .popup__close::before,
+.popup .popup__body .popup__content .popup__close::after {
+  position: absolute;
+  content: " ";
+  left: 15px;
+  height: 15px;
+  width: 2px;
+  background-color: #000;
+}
+
+.popup .popup__body .popup__content .popup__close::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.popup .popup__body .popup__content .popup__close::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .popup .popup__body .popup__content .popup__title {
@@ -917,6 +957,10 @@ footer .copyright {
   color: #001A49;
 }
 
+.popup .popup__body .popup__content .info-img {
+  margin-top: 15px;
+}
+
 .popup .popup__body .popup__content .info-img .info-img__relative {
   position: relative;
 }
@@ -934,6 +978,7 @@ footer .copyright {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -945,7 +990,7 @@ footer .copyright {
           align-items: center;
 }
 
-.popup .popup__body .popup__content .info-img .info-img__relative .info-img__absolute img {
+.popup .popup__body .popup__content .info-img .info-img__relative .info-img__absolute .document {
   width: 50%;
 }
 
@@ -1345,7 +1390,7 @@ footer .copyright {
             flex-direction: column;
   }
 
-  .popup .popup__body .popup__content .info-img .info-img__relative .info-img__absolute img {
+  .popup .popup__body .popup__content .info-img .info-img__relative .info-img__absolute .document {
     width: 210px;
     height: 137px;
   }
@@ -1363,8 +1408,8 @@ footer .copyright {
   }
 
   header {
-    background-position: 70% 90%;
-    background-size: auto 60%;
+    background-position: 70% 100%;
+    background-size: auto 70%;
   }
 
   header .header__top img {
