@@ -37,7 +37,10 @@
             @include tablet{
                 padding: 23px 26px 15px 20px;
             }
-
+            .benefits__img{
+                width: 68px;
+                height: 68px;
+            }
             .benefits__wrap__box__content{
                 margin-left: 30px;
                 h4{

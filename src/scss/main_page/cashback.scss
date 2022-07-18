@@ -15,6 +15,7 @@ aside{
           }
         .aside__background__content{
             margin-right: 77px;
+            max-width: 670px;
             @include desktop-min{
                 margin: 0 21px 36px 21px;
               }
@@ -40,6 +41,10 @@ aside{
                     font-size: 16px;
                   }
             }
+        }
+        .cashback{
+          width: 100%;
+          max-width: 500px;
         }
     }
 }

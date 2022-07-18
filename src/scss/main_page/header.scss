@@ -4,8 +4,8 @@ header{
     background: url("@img/header__background.png") 0 0/cover no-repeat;
 	background-position: right;
     @include phone{
-        background-position: 70% 90%;
-        background-size: auto 60%;
+        background-position: 70% 100%;
+        background-size: auto 70%;
       }
     .header__top{
         padding-top: 30px;
