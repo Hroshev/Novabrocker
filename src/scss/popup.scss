@@ -90,7 +90,8 @@
                             flex-direction: column;
                         }
                         .document {
-                            width: 50%;
+                            width: 316px;
+                            height: 199px;
                             @include tablet-min {
                                 width: 210px;
                                 height: 137px;
